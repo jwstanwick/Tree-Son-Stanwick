@@ -20,10 +20,10 @@ def ask(question, chat_log=None):
         model="text-davinci-002",
         prompt=prompt_text,
         temperature=1,
-        max_tokens=500,
+        max_tokens=1024,
         top_p=1,
         frequency_penalty=2,
-        presence_penalty=1,
+        presence_penalty=2,
         stop=["Tree:", "Human:"]
     )
 
